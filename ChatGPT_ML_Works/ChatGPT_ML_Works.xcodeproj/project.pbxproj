@@ -17,6 +17,13 @@
 		47EDBEDE2A422CFD00662755 /* ChatGPT_ML_WorksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDBEDD2A422CFD00662755 /* ChatGPT_ML_WorksUITests.swift */; };
 		47EDBEE02A422CFD00662755 /* ChatGPT_ML_WorksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDBEDF2A422CFD00662755 /* ChatGPT_ML_WorksUITestsLaunchTests.swift */; };
 		47EDBEEE2A422DB200662755 /* GPTEncoder in Frameworks */ = {isa = PBXBuildFile; productRef = 47EDBEED2A422DB200662755 /* GPTEncoder */; };
+		47EDBEF02A422E6F00662755 /* ChatGPTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDBEEF2A422E6F00662755 /* ChatGPTService.swift */; };
+		47EDBEF32A42311200662755 /* GPTModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDBEF22A42311200662755 /* GPTModels.swift */; };
+		47EDBEF42A42311200662755 /* GPTModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDBEF22A42311200662755 /* GPTModels.swift */; };
+		47EDBEF52A42311200662755 /* GPTModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDBEF22A42311200662755 /* GPTModels.swift */; };
+		47EDBEF82A42316C00662755 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDBEF72A42316C00662755 /* Array+Extensions.swift */; };
+		47EDBEF92A42316C00662755 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDBEF72A42316C00662755 /* Array+Extensions.swift */; };
+		47EDBEFA2A42316C00662755 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EDBEF72A42316C00662755 /* Array+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,9 @@
 		47EDBED92A422CFD00662755 /* ChatGPT_ML_WorksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGPT_ML_WorksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EDBEDD2A422CFD00662755 /* ChatGPT_ML_WorksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_ML_WorksUITests.swift; sourceTree = "<group>"; };
 		47EDBEDF2A422CFD00662755 /* ChatGPT_ML_WorksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_ML_WorksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		47EDBEEF2A422E6F00662755 /* ChatGPTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTService.swift; sourceTree = "<group>"; };
+		47EDBEF22A42311200662755 /* GPTModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTModels.swift; sourceTree = "<group>"; };
+		47EDBEF72A42316C00662755 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,8 @@
 		47EDBEBC2A422CFB00662755 /* ChatGPT_ML_Works */ = {
 			isa = PBXGroup;
 			children = (
+				47EDBEF62A42315A00662755 /* Helpers */,
+				47EDBEF12A4230FA00662755 /* GPT */,
 				47EDBEBD2A422CFB00662755 /* ChatGPT_ML_WorksApp.swift */,
 				47EDBEBF2A422CFB00662755 /* ContentView.swift */,
 				47EDBEC12A422CFD00662755 /* Assets.xcassets */,
@@ -133,6 +145,23 @@
 				47EDBEDF2A422CFD00662755 /* ChatGPT_ML_WorksUITestsLaunchTests.swift */,
 			);
 			path = ChatGPT_ML_WorksUITests;
+			sourceTree = "<group>";
+		};
+		47EDBEF12A4230FA00662755 /* GPT */ = {
+			isa = PBXGroup;
+			children = (
+				47EDBEEF2A422E6F00662755 /* ChatGPTService.swift */,
+				47EDBEF22A42311200662755 /* GPTModels.swift */,
+			);
+			path = GPT;
+			sourceTree = "<group>";
+		};
+		47EDBEF62A42315A00662755 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				47EDBEF72A42316C00662755 /* Array+Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +303,10 @@
 				47EDBEC72A422CFD00662755 /* Persistence.swift in Sources */,
 				47EDBECA2A422CFD00662755 /* ChatGPT_ML_Works.xcdatamodeld in Sources */,
 				47EDBEC02A422CFB00662755 /* ContentView.swift in Sources */,
+				47EDBEF82A42316C00662755 /* Array+Extensions.swift in Sources */,
+				47EDBEF32A42311200662755 /* GPTModels.swift in Sources */,
 				47EDBEBE2A422CFB00662755 /* ChatGPT_ML_WorksApp.swift in Sources */,
+				47EDBEF02A422E6F00662755 /* ChatGPTService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +315,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EDBED42A422CFD00662755 /* ChatGPT_ML_WorksTests.swift in Sources */,
+				47EDBEF92A42316C00662755 /* Array+Extensions.swift in Sources */,
+				47EDBEF42A42311200662755 /* GPTModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +324,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EDBEF52A42311200662755 /* GPTModels.swift in Sources */,
 				47EDBEE02A422CFD00662755 /* ChatGPT_ML_WorksUITestsLaunchTests.swift in Sources */,
 				47EDBEDE2A422CFD00662755 /* ChatGPT_ML_WorksUITests.swift in Sources */,
+				47EDBEFA2A42316C00662755 /* Array+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
